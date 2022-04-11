@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textview_heading"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#283937"
+        android:gravity="center|center_vertical"
+        android:padding="5dp"
+        android:text="@string/text_heading"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F3EBEB"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_heading">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="@string/text_subHeading"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:id="@+id/textArticle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:layout_marginStart="5dp"
+                android:text="@string/text_loremipsum_article"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
